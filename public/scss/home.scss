@@ -60,7 +60,7 @@ a{
         bottom: 4%;
         left: 10%;
         margin: -0.5em;
-        font-size: 3em;
+        font-size: 13em;
         -webkit-animation: circle 30s linear infinite;
         animation: circle 30s linear infinite;
         &:before{
@@ -266,7 +266,7 @@ a{
     transition: 0.3s;
     -webkit-transform:0.3s;
     &:hover{
-        fill:rgb(255, 255, 255);
+        fill:rgba(255,255,255,0.5);
     }
 }
 @keyframes dash {

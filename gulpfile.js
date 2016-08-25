@@ -8,12 +8,14 @@ var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 var rename = require('gulp-rename');
 var minifycss = require('gulp-minify-css');
+var stylus = require('gulp-stylus');
 
 var paths={
     gulp_js:'public/gulpjs/*.js',
     scss:'public/scss/*.scss',
     css:'public/css',
-    js:'public/js/'
+    js:'public/js/',
+    stylus:'public/stylus/*.styl',
 }
 
 // 检查脚本
@@ -27,6 +29,14 @@ gulp.task('jshint', function() {
 gulp.task('sass', function() {
     gulp.src(paths.scss)
         .pipe(sass())
+        .pipe(gulp.dest(paths.css))
+        .pipe(rename({suffix: '.min'}))
+        .pipe(minifycss())
+        .pipe(gulp.dest(paths.css));
+});
+gulp.task('stylus', function () {
+    return gulp.src(paths.stylus)
+        .pipe(stylus())
         .pipe(gulp.dest(paths.css))
         .pipe(rename({suffix: '.min'}))
         .pipe(minifycss())
@@ -50,4 +60,4 @@ gulp.task('watch',function(){
 });
 
 //default
-gulp.task('default',['jshint','sass','scripts','watch'])
+gulp.task('default',['jshint','sass','scripts','stylus','watch'])
