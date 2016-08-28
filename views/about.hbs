@@ -1,0 +1,105 @@
+{{#extend "css"}}
+<meta name="viewport" content="width=1024" />
+<link rel="stylesheet" href="/css/impress.min.css"/>
+{{/extend}}
+
+<body class="impress-not-supported">
+
+<div class="fallback-message">
+	<p>您的浏览器 <b>不支持</b> impress.js的展示要求, 将为您呈现简化版的展示</p>
+    <p>为了获取最佳效果，请使用最新版的<b>Chrome</b>, <b>Safari</b> 或 <b>Firefox</b> 浏览器</p>
+    <p>珍爱生命，保护地球，远离IE。</p>
+</div>
+
+
+<div id="impress">
+    <div id="welcome" class="step" data-x="-1000" data-y="-1500">
+        <p><span class="title">欢迎来到 <em><a href="http://songjz.cn">songjz.cn</a></em> </span></p>
+        <p><span class="body">我叫<b class="positioning">宋进忠</b></span></p>
+        <p><span class="bottom">这是我的网站</b></span></p>
+    </div>
+    <div id="now" class="step" data-x="0" data-y="-1500">
+        <div class="now_me"><b>现在的我：</b></div>
+        <ul>
+            <li>职业：<p class="stu">学生</p>
+                <div class="ecnu">就读于华东师范大学</p>
+            </li>
+            <li>坐标：<p class="pos">南京</p>
+                <div class="nanjin">目前在南京实习</p>
+            </li>
+            <li><p class="love">前端爱好者</p></li>
+        </ul>
+    </div>
+    <div id="link" class="step" data-x="-500" data-y="2000" data-rotate="90" data-scale="2">
+    <p>您可以在<a href="http://weibo.com/3822969136">新浪微博</a>或者<a href="https://github.com/songjinzhong">Github</a>上找到我</p>
+        <q>也可以逛一逛<a href="#">这个网站</a>，看一看我做过的项目</q>
+    </div>
+    <div id="place" class="step" data-x="3000" data-y="-1500">
+        <div>生于珠城（蚌埠）</div>
+        <div>长于淮河</div>
+        <div>在南京读了四年本科</div>
+        <div>现在，在上海读研</div>
+        <div>将来？</div>
+    </div>
+    <div id="child" class="step" data-x="1000" data-y="-1500">
+        <div><b>小时候：</b></div>
+        <div><p>立志要成为...</p></div>
+        <div><p>认识到现实的残酷之后<p></div>
+        <div>才会意识到</div>
+    </div>
+    <div id="ybkq" class="step" data-x="1000" data-y="-1500" data-z="-3000" data-rotate="-300" data-scale="0.1">
+        <div><b>梦想遥不可期</b></div>
+    </div>
+    <div id="its" class="step" data-x="850" data-y="3000" data-rotate="90" data-scale="5">
+        <p>做一个简单的人，踏实而务实。不沉溺幻想。不庸人自扰</p>
+    </div>
+    <div id="tiny" class="step" data-x="850" data-y="3000" data-z="-3000" data-rotate="300" data-scale="1">
+        <p>心静如水</p>
+    </div>
+    <div id="wenzi" class="step" data-x="4000" data-y="4000" data-scale="3">
+        <div>我用笨拙的文字，记录了我的成长</div>
+        <div><a href="http://blog.songjz.cn" target="_black">我的博客</a></div>
+        <div>曾几何时，我也曾彷徨过</div>
+    </div>
+    <div id="mengxiang" class="step" data-x="0" data-y="-400" data-scale="2">
+        <div>青春是梦想开始的地方</div>
+        <div>如果有一天，梦碎了</div>
+    </div>
+    <div id="its-in-3d" class="step" data-x="0" data-y="100" data-z="-100" data-rotate-x="-40" data-rotate-y="10" data-scale="2">
+        <p><span class="have">但</span> <span class="you">至少</span> <span class="noticed">我</span> <span class="its">努力</span> <span class="in">过</span></p>
+    </div>
+    <div id="more" class="step" data-x="4000" data-y="0" data-scale="2">
+        <div>One More Thing...</div>
+        <div>分享给你，勿忘初心</div>
+    </div>
+    <div id="title" class="step" data-x="3000" data-y="1500" data-z= "6000" data-scale="5">
+        <p>认认真真做事<sup>*</sup></p>
+        <p>低调做人<sup>*</sup></p>
+        <p>凡事用心<sup>*</sup></p>
+    </div>
+    <div id="last" class="step" data-x="-3000" data-y="1500" data-scale="5">
+        <p>谢谢您的来访</p>
+        <p>点击<a href="http://songjz.cn">这里</a>返回主页</p>
+    </div>
+    <div id="overview" class="step" data-x="3000" data-y="1500" data-scale="10">
+    </div>
+
+</div>
+<div class="hint">
+    <p>使用空格或方向键继续</p>
+</div>
+<script>
+if ("ontouchstart" in document.documentElement) { 
+    document.querySelector(".hint").innerHTML = "<p>在左侧或右侧点击继续</p>";
+}
+</script>
+
+
+
+{{#extend "js"}}
+
+<script type="text/javascript" src="/js/impress.min.js"></script>
+<script>impress().init();</script>
+
+{{/extend}}
+
