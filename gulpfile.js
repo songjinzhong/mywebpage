@@ -57,6 +57,7 @@ gulp.task('scripts', function() {
 gulp.task('watch',function(){
         gulp.watch(paths.gulpjs, ['scripts']);
         gulp.watch(paths.scss,['sass']);
+        gulp.watch(paths.stylus,['stylus']);
 });
 
 //default

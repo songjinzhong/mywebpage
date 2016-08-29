@@ -7,8 +7,8 @@ router.get('/', function(req, res, next) {
 });
 
 /* GET CV page. */
-router.get('/CV', function(req, res, next) {
-  res.render('cv', { title: '关于我|宋进忠' });
+router.get('/about', function(req, res, next) {
+  res.render('about', { title: '关于我 | 渔人' });
 });
 
 

@@ -167,6 +167,7 @@ a:focus {
   border: 1px solid #e4c652;
   border-radius: 10px;
   background: #eedc94;
+  font-size: 30px;
 }
 .fallback-message p {
   margin-bottom: 10px;
@@ -225,30 +226,121 @@ a:focus {
 .slide q strong {
   white-space: nowrap;
 }
+/*
+ * 我的代码段
+*/
+.up2down {
+  display: inline-block;
+}
+.present .up2down {
+  -webkit-transform: translateY(10px);
+  -moz-transform: translateY(10px);
+  -ms-transform: translateY(10px);
+  -o-transform: translateY(10px);
+  transform: translateY(10px);
+}
+.down2up {
+  display: inline-block;
+}
+.present .down2up {
+  -webkit-transform: translateY(-10px);
+  -moz-transform: translateY(-10px);
+  -ms-transform: translateY(-10px);
+  -o-transform: translateY(-10px);
+  transform: translateY(-10px);
+}
+.left2right {
+  display: inline-block;
+}
+.present .left2right {
+  -webkit-transform: translateX(20px);
+  -moz-transform: translateX(20px);
+  -ms-transform: translateX(20px);
+  -o-transform: translateX(20px);
+  transform: translateX(20px);
+}
+.right2left {
+  display: inline-block;
+}
+.present .right2left {
+  -webkit-transform: translateX(-20px);
+  -moz-transform: translateX(-20px);
+  -ms-transform: translateX(-20px);
+  -o-transform: translateX(-20px);
+  transform: translateX(-20px);
+}
+#welcome {
+  width: 900px;
+  text-align: center;
+}
+#welcome .right2left {
+  margin-left: 30px;
+  -webkit-transition: 0.5s 0.5s;
+  -moz-transition: 0.5s 0.5s;
+  -ms-transition: 0.5s 0.5s;
+  -o-transition: 0.5s 0.5s;
+  transition: 0.5s 0.5s;
+}
+#welcome .left2right {
+  -webkit-transition: 0.5s 1s;
+  -moz-transition: 0.5s 1s;
+  -ms-transition: 0.5s 1s;
+  -o-transition: 0.5s 1s;
+  transition: 0.5s 1s;
+}
+#welcome .size {
+  -webkit-transition: 0.5s 1.5s;
+  -moz-transition: 0.5s 1.5s;
+  -ms-transition: 0.5s 1.5s;
+  -o-transition: 0.5s 1.5s;
+  transition: 0.5s 1.5s;
+}
+#welcome.present .size {
+  font-size: 68px;
+  font-weight: 700;
+}
+#now {
+  width: 600px;
+  text-align: center;
+}
+#now .now_me {
+  font-size: 30px;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  text-align: left;
+}
+#now.present .now_me {
+  font-size: 60px;
+}
+#now .ecnu {
+  -webkit-transition: 0.5s 0.2s;
+  -moz-transition: 0.5s 0.2s;
+  -ms-transition: 0.5s 0.2s;
+  -o-transition: 0.5s 0.2s;
+  transition: 0.5s 0.2s;
+}
+#now .love {
+  -webkit-transition: 0.5s 0.4s;
+  -moz-transition: 0.5s 0.4s;
+  -ms-transition: 0.5s 0.4s;
+  -o-transition: 0.5s 0.4s;
+  transition: 0.5s 0.4s;
+}
+#now .nanjing {
+  -webkit-transition: 0.5s 0.6s;
+  -moz-transition: 0.5s 0.6s;
+  -ms-transition: 0.5s 0.6s;
+  -o-transition: 0.5s 0.6s;
+  transition: 0.5s 0.6s;
+}
+#link {
+  width: 900px;
+}
 #title {
-  padding: 0;
-}
-#title .try {
-  font-size: 64px;
-  position: absolute;
-  top: -0.5em;
-  left: 1.5em;
-  -webkit-transform: translateZ(20px);
-  -moz-transform: translateZ(20px);
-  -ms-transform: translateZ(20px);
-  -o-transform: translateZ(20px);
-  transform: translateZ(20px);
-}
-#title h1 {
-  font-size: 190px;
-  -webkit-transform: translateZ(50px);
-  -moz-transform: translateZ(50px);
-  -ms-transform: translateZ(50px);
-  -o-transform: translateZ(50px);
-  transform: translateZ(50px);
-}
-#title .footnote {
-  font-size: 32px;
+  text-align: center;
 }
 #big {
   width: 600px;
@@ -432,8 +524,9 @@ a:focus {
 .impress-enabled .hint {
   display: block;
 }
-.impress-on-bored .hint {
-  opacity: 1;
+.impress-on-welcome .hint {
+  font-size: 30px;
+  opacity: 0.7;
   -webkit-transform: translateY(0px);
   -moz-transform: translateY(0px);
   -ms-transform: translateY(0px);
