@@ -30,8 +30,7 @@ a {
     text-align: center;
     display: block;
     color: #22c3aa;
-    text-decoration: none;
-    text-shadow: 1px 1px #EFEFEF,2px 2px #CCC; }
+    text-decoration: none; }
   #bg p {
     position: fixed;
     bottom: 0px;
@@ -216,7 +215,7 @@ a {
         color: #fff;
         text-indent: 0;
         font-size: 1rem;
-        margin: 0 0.2em;
+        margin: 0.2em;
         display: inline-block;
         font-weight: bold; }
         #home header .about div::before, #home header .about div::after {
@@ -271,6 +270,9 @@ a {
           z-index: 10;
           -webkit-transition: 0.3s ease;
           -moz-transition: 0.3s ease;
+          -ms-transition: 0.3s ease;
+          -o-transition: 0.3s ease;
+          transition: 0.3s ease;
           pointer-events: none;
           background: transparent;
           border: 10px solid transparent;
@@ -284,6 +286,9 @@ a {
           z-index: 10;
           -webkit-transition: 0.3s ease;
           -moz-transition: 0.3s ease;
+          -ms-transition: 0.3s ease;
+          -o-transition: 0.3s ease;
+          transition: 0.3s ease;
           pointer-events: none;
           content: attr(data);
           background: rgba(0, 0, 0, 0.7);
@@ -305,7 +310,7 @@ a {
         font-size: 18px;
         display: inline-block;
         color: #EFEFEF;
-        margin: 0 0.3em;
+        margin: 0.1em;
         font-weight: bold;
         -webkit-border-radius: 50px;
         border-radius: 50px;
