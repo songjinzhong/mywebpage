@@ -18,7 +18,7 @@
     font-weight:normal;
     font-style:normal
 }
-html,body {
+body {
 	padding:0;
 	margin:0;
     font-family: "Microsoft YaHei";
@@ -170,21 +170,27 @@ a{
             font-size: 2rem;
             font-weight: 900;
             margin: 0.5em 0 0.25em 0;
-            color: rgb(34,195,170);
+            color: #fff;
             letter-spacing: 0;
-            border: 1px solid;
+            border: rgba(34,195,170,.5) 1px solid;
             padding: 2px 30px;
             position:relative;
             overflow:hidden;
             p{
+                display:inline-block;
                 margin:0;
-                @include mytransform(translateX(-100px))
                 @include mytransition(0.5s)
+            }
+            p.left{
+                @include mytransform(translateX(-100px))
+            }
+            p.right{
+                @include mytransform(translateX(100px))
             }
             &:hover p{
                 @include mytransform(translateX(0))
-                @include mytransition(0.5s)
             }
+
             &::before,&::after{
                 -webkit-box-sizing: border-box;
                 box-sizing: border-box;
@@ -617,4 +623,3 @@ a{
         transform: scale3d(1, 1, 1);
     }
 }
-
