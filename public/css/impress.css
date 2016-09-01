@@ -322,43 +322,112 @@ a {
   transition: 0.5s 0.6s;
 }
 #link {
-  width: 900px;
+  width: 800px;
+  font-size: 30px;
+  line-height: 100px;
 }
 #place {
-  width: 900px;
+  width: 600px;
 }
 #place .jianglai {
   position: relative;
 }
 #place span {
-  -webkit-transition: 1.5s 2s;
-  -moz-transition: 1.5s 2s;
-  -ms-transition: 1.5s 2s;
-  -o-transition: 1.5s 2s;
-  transition: 1.5s 2s;
+  -webkit-transition: 4s 1s;
+  -moz-transition: 4s 1s;
+  -ms-transition: 4s 1s;
+  -o-transition: 4s 1s;
+  transition: 4s 1s;
   position: absolute;
 }
 #place.present span {
+  z-index: -1;
   font-size: 200px;
+  color: rgba(255,237,0,0.5);
   -webkit-transform: translateY(-300px) translateX(150px);
   -moz-transform: translateY(-300px) translateX(150px);
   -ms-transform: translateY(-300px) translateX(150px);
   -o-transform: translateY(-300px) translateX(150px);
   transform: translateY(-300px) translateX(150px);
 }
+#child {
+  width: 600px;
+}
 #child.present span {
-  -webkit-transition: 1.5s 2s;
-  -moz-transition: 1.5s 2s;
-  -ms-transition: 1.5s 2s;
-  -o-transition: 1.5s 2s;
-  transition: 1.5s 2s;
-  -webkit-transform: translateX(550px);
-  -moz-transform: translateX(550px);
-  -ms-transform: translateX(550px);
-  -o-transform: translateX(550px);
-  transform: translateX(550px);
+  -webkit-transition: 3s 1s;
+  -moz-transition: 3s 1s;
+  -ms-transition: 3s 1s;
+  -o-transition: 3s 1s;
+  transition: 3s 1s;
+  -webkit-transform: translateY(-100px) translateX(100px) rotate(720deg);
+  -moz-transform: translateY(-100px) translateX(100px) rotate(720deg);
+  -ms-transform: translateY(-100px) translateX(100px) rotate(720deg);
+  -o-transform: translateY(-100px) translateX(100px) rotate(720deg);
+  transform: translateY(-100px) translateX(100px) rotate(720deg);
   opacity: 0;
   position: absolute;
+}
+#ybkj.present span {
+  display: inline-block;
+  -webkit-transform: scale(1.5);
+  -moz-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  -o-transform: scale(1.5);
+  transform: scale(1.5);
+}
+#ybkj.present .bu {
+  -webkit-transform: scale(0.6);
+  -moz-transform: scale(0.6);
+  -ms-transform: scale(0.6);
+  -o-transform: scale(0.6);
+  transform: scale(0.6);
+}
+#ybkj.present .yao {
+  -webkit-transition: 0.5s 0.5s;
+  -moz-transition: 0.5s 0.5s;
+  -ms-transition: 0.5s 0.5s;
+  -o-transition: 0.5s 0.5s;
+  transition: 0.5s 0.5s;
+}
+#ybkj.present .ke {
+  -webkit-transition: 0.5s 1s;
+  -moz-transition: 0.5s 1s;
+  -ms-transition: 0.5s 1s;
+  -o-transition: 0.5s 1s;
+  transition: 0.5s 1s;
+}
+#ybkj.present .ji {
+  -webkit-transition: 0.5s 1.5s;
+  -moz-transition: 0.5s 1.5s;
+  -ms-transition: 0.5s 1.5s;
+  -o-transition: 0.5s 1.5s;
+  transition: 0.5s 1.5s;
+}
+#ybkj.present .bu {
+  -webkit-transition: 0.5s 2s;
+  -moz-transition: 0.5s 2s;
+  -ms-transition: 0.5s 2s;
+  -o-transition: 0.5s 2s;
+  transition: 0.5s 2s;
+}
+#its b {
+  -webkit-transition: 4s 1s;
+  -moz-transition: 4s 1s;
+  -ms-transition: 4s 1s;
+  -o-transition: 4s 1s;
+  transition: 4s 1s;
+}
+#its b:nth-child(1) {
+  color: #bfa7a7;
+}
+#its b:nth-child(2) {
+  color: #8f7ca7;
+}
+#its.present b:nth-child(1) {
+  color: #8f7ca7;
+}
+#its.present b:nth-child(2) {
+  color: #bfa7a7;
 }
 #tiny p {
   -webkit-transition: 2s 2s;
@@ -368,11 +437,98 @@ a {
   transition: 2s 2s;
 }
 #tiny.present p {
-  font-size: 10px;
-  opacity: 0;
+  font-size: 20px;
+  opacity: 0.3;
+  -webkit-transform: rotate(-360deg);
+  -moz-transform: rotate(-360deg);
+  -ms-transform: rotate(-360deg);
+  -o-transform: rotate(-360deg);
+  transform: rotate(-360deg);
+}
+#wenzi {
+  width: 900px;
+}
+#wenzi .button {
+  -webkit-transition: 0.5s 2s;
+  -moz-transition: 0.5s 2s;
+  -ms-transition: 0.5s 2s;
+  -o-transition: 0.5s 2s;
+  transition: 0.5s 2s;
+}
+#wenzi.present .button {
+  font-size: 66px;
+}
+#panghuang {
+  width: 600px;
+}
+#qianduan {
+  width: 600px;
+}
+#qianduan .yfbkss {
+  font-size: 24px;
+  padding-left: 50px;
+}
+#luxian {
+  font-size: 40px;
+  width: 600px;
+}
+#mengxiang span {
+  display: inline-block;
+  -webkit-transition: 2s 1.5s;
+  -moz-transition: 2s 1.5s;
+  -ms-transition: 2s 1.5s;
+  -o-transition: 2s 1.5s;
+  transition: 2s 1.5s;
+}
+#mengxiang.present span {
+  -webkit-transform: scale(0.4);
+  -moz-transform: scale(0.4);
+  -ms-transform: scale(0.4);
+  -o-transform: scale(0.4);
+  transform: scale(0.4);
+  opacity: 0.2;
+  color: #f00;
+}
+#more {
+  width: 600px;
+}
+#wwcx {
+  width: 333px;
+}
+#wwcx .english {
+  font-size: 20px;
+  text-align: right;
+}
+#title p {
+  -webkit-transition: 5s 1s;
+  -moz-transition: 5s 1s;
+  -ms-transition: 5s 1s;
+  -o-transition: 5s 1s;
+  transition: 5s 1s;
+}
+#title.present p {
+  -webkit-transform: translateZ(-10000px);
+  -moz-transform: translateZ(-10000px);
+  -ms-transform: translateZ(-10000px);
+  -o-transform: translateZ(-10000px);
+  transform: translateZ(-10000px);
 }
 .center {
   text-align: center;
+}
+#last .button {
+  -webkit-transition: 0.2s 1.5s;
+  -moz-transition: 0.2s 1.5s;
+  -ms-transition: 0.2s 1.5s;
+  -o-transition: 0.2s 1.5s;
+  transition: 0.2s 1.5s;
+}
+#last.present .button {
+  -webkit-transform: scale(1.6);
+  -moz-transform: scale(1.6);
+  -ms-transform: scale(1.6);
+  -o-transform: scale(1.6);
+  transform: scale(1.6);
 }
 #big {
   width: 600px;
@@ -493,6 +649,7 @@ a {
   transform: translateZ(-40px);
 }
 #its-in-3d .its {
+  color: #0dabea;
   -webkit-transform: translateZ(60px);
   -moz-transform: translateZ(60px);
   -ms-transform: translateZ(60px);

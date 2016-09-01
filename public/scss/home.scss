@@ -28,7 +28,6 @@ a{
     text-decoration:none;
 }
 #bg {
-    opacity:0.4;
     width:480px;
     height:480px;
     position:fixed;
@@ -36,7 +35,11 @@ a{
     left:50%;
     margin-left:-240px;
     margin-top:-240px;
+    & #face{
+        opacity:0.4;
+    }
     & span{
+        opacity:0.4;
         position: fixed;
         bottom: 2px;
         left: 50%;
@@ -56,6 +59,7 @@ a{
         color: #827e7e;
     }
     & #loading-big{
+        opacity:0.4;
         position:fixed;
         right: 20%;
         top: 5%;
@@ -77,6 +81,7 @@ a{
         }
     }
     & #loading-small{
+        opacity:0.4;
         position:fixed;
         bottom: 4%;
         left: 10%;
