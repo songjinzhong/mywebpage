@@ -22,7 +22,7 @@ body {
 	padding:0;
 	margin:0;
     font-family: "Microsoft YaHei";
-    background:#333;
+    background: url("/imgs/bg.jpg")
 }
 a{
     text-decoration:none;
@@ -35,6 +35,18 @@ a{
     left:50%;
     margin-left:-240px;
     margin-top:-240px;
+    @media (min-width: 768px){
+        width:720px;
+        height:720px;
+        margin-left:-360px;
+        margin-top:-360px;
+    }
+    @media (min-width: 1200px){
+        width:900px;
+        height:900px;
+        margin-left:-450px;
+        margin-top:-450px;
+    }
     & #face{
         opacity:0.4;
     }
@@ -344,7 +356,7 @@ a{
                 font-weight:bold;
                 -webkit-border-radius: 50px;
                 border-radius: 50px;
-                background: rgba(34, 195, 170 , 0.2);
+                background: rgba(34, 195, 170 , 0.4);
                 padding: .4em 1em;
                 line-height:1.3rem;
                 -webkit-transition:background-color 0.3s, color 0.3s;
@@ -378,6 +390,11 @@ a{
                     -webkit-animation: anim2 0.3s 0.3s forwards;
                     animation: anim2 0.3s 0.3s forwards;
                 }
+            }
+        }
+        @media (min-width: 768px){
+            & .header,& .about,& #link{
+                margin-top:30px;
             }
         }
     }
