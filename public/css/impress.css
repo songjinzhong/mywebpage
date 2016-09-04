@@ -447,6 +447,7 @@ a {
 }
 #wenzi {
   width: 900px;
+  text-align: center;
 }
 #wenzi .button {
   -webkit-transition: 0.5s 2s;
