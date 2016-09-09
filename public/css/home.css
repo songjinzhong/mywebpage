@@ -36,11 +36,12 @@ a {
   #bg #face {
     opacity: 0.4; }
   #bg span {
-    opacity: 0.4;
+    font-weight: bold;
+    opacity: 0.6;
     position: fixed;
     bottom: 2px;
     left: 50%;
-    margin-left: -49px;
+    margin-left: -42px;
     font-size: 14px;
     text-align: center;
     display: block;
