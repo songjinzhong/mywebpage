@@ -373,6 +373,16 @@ a {
     @media (min-width: 768px) {
       #home header .header, #home header .about, #home header #link {
         margin-top: 30px; } }
+  #home footer .fork a {
+    position: fixed;
+    bottom: 20px;
+    right: 0px;
+    color: #827e7e; }
+  @media (max-width: 375px) {
+    #home footer .fork a {
+      display: none; } }
+  #home footer .fork a:hover, #home footer .fork a:active {
+    text-decoration: underline; }
 
 #hello {
   fill: transparent;

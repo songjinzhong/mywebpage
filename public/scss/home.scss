@@ -399,6 +399,20 @@ a{
             }
         }
     }
+    footer .fork a{
+        position:fixed;
+        bottom:20px;
+        right:0px;
+        color: #827e7e;
+    }
+    @media (max-width: 375px){
+        & footer .fork a{
+            display:none;
+        }
+    }
+    footer .fork a:hover, footer .fork a:active {
+        text-decoration: underline;
+    }
 }
 #hello{
     fill: transparent;
