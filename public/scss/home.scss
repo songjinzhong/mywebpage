@@ -345,9 +345,10 @@ a{
         }
         & #link{
             opacity:0;
+            width:80%;
             animation: header 1s 1.8s ease forwards;
             -webkit-animation: header 1s 1.8s ease forwards;
-            margin: 1em 0;
+            margin: 1em auto;
             & a{
                 position:relative;
                 font-size:18px;
