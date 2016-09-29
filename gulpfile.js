@@ -12,7 +12,6 @@ var stylus = require('gulp-stylus');
 
 var paths={
     gulp_js:'public/gulpjs/*.js',
-    scss:'public/scss/*.scss',
     css:'public/css',
     js:'public/js/',
     stylus:'public/stylus/*.styl',
@@ -25,6 +24,7 @@ gulp.task('jshint', function() {
         .pipe(jshint.reporter('default'));
 });
 
+/* remove
 // 编译Sass
 gulp.task('sass', function() {
     gulp.src(paths.scss)
@@ -34,6 +34,7 @@ gulp.task('sass', function() {
         .pipe(minifycss())
         .pipe(gulp.dest(paths.css));
 });
+*/
 gulp.task('stylus', function () {
     return gulp.src(paths.stylus)
         .pipe(stylus())
@@ -61,4 +62,4 @@ gulp.task('watch',function(){
 });
 
 //default
-gulp.task('default',['jshint','sass','scripts','stylus','watch'])
+gulp.task('default',['jshint','scripts','stylus','watch'])
