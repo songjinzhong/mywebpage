@@ -1,5 +1,5 @@
 {{#extend "css"}}
-<link rel="stylesheet" href="/css/home.min.css"/>
+<link rel="stylesheet" href="/css/home-0929.min.css"/>
 {{/extend}}
 
 <div id='bg'>
@@ -126,13 +126,12 @@
 		</g>
 	</g>
 	</svg>
-	<div id="loading-big"></div>
-	<div id="loading-small"></div>
-	<span>堆金不如积谷<br>技术成就梦想</span>
-	<p>By Express 4.1</p>
+	<div id="loading-big" class="hide"></div>
+	<div id="loading-small" class="hide"></div>
+	<span class="hide">堆金不如积谷<br>技术成就梦想</span>
 </div>
 <div id="home">
-	<div id="flash">
+	<div id="flash" class="hide">
 		<a href="/404">
 		<svg id="hello" viewBox="0 0 32 32"><use xlink:href="#hi"></use></svg>
 		</a>
@@ -143,15 +142,12 @@
 	</div>
 	<header>
 		<div id="tishi"></div>
-		<span class="header" data-text="宋进忠"><p class="left">渔</p><p class="right">人</p></span>
-		<span class="about"><div><p data="浏览器、HTTP、CSS、JS、NodeJs、框架、框架、框架...">前端爱好者</p></div><div><p data="上海、华东师范大学、计软学院、研究生、南京、实习...">学生</p></div><div><p data="写代码、Debug、改bug、狂论坛、学新技术、自黑...">程序员</p></div></span>
-		<div id="link">
-			<a href="http://blog.yuren.space/" title="我的博客">博客</a><a href="mailto:songjz.ecnu@gmail.com" title="给我发邮件">邮件</a><a href="https://github.com/songjinzhong" title="我的GitHub">GitHub</a><a href="http://weibo.com/3822969136" title="我的微博">微博</a><a href="/about" title="关于我">关于</a>
+		<span class="header hide" data-text="宋进忠"><p class="left">渔</p><p class="right">人</p></span>
+		<span class="about hide"><div><p data="浏览器、HTTP、CSS、JS、NodeJs、框架、框架、框架...">前端er</p></div><div><p data="上海、华东师范大学、计软学院、研究生、南京、实习...">学生</p></div><div><p data="写代码、Debug、改bug、狂论坛、学新技术、自黑...">程序员</p></div></span>
+		<div id="link" class="hide">
+			<a href="http://blog.yuren.space" title="我的博客">博客</a><a href="mailto:songjz.ecnu@gmail.com" title="给我发邮件">邮件</a><a href="https://github.com/songjinzhong" title="我的GitHub">GitHub</a><a href="http://weibo.com/3822969136" title="我的微博">微博</a><a href="/about" title="关于我">关于</a>
 		</div>
 	</header>
-	<footer>
-		<div class="fork"><a href="https://github.com/songjinzhong/mywebpage">Source on GitHub</a></div>
-	</footer>
 
 <svg display="none" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="276" height="32" viewBox="0 0 276 32">
 <defs>
@@ -182,9 +178,28 @@
 </svg>
 
 </div>
+<div id="btn-view">隐藏</div>
 {{#extend "js"}}
 
 <script type="text/javascript" src="/js/snap.svg-min.js"></script>
-
+<script type="text/javascript" src="/js/jquery-3.1.0.min.js"></script>
+<script type="text/javascript">
+	(function(){
+		$("#btn-view").on('click', showHideToggle);
+		var hideAll = false;
+		function showHideToggle() {
+			if(hideAll) {
+			    $(".hide").show();
+			    $("#btn-view").html('隐藏');
+			    $("#btn-view").css({'top':'50%'});
+			} else {
+			    $(".hide").hide();
+			    $("#btn-view").html('显示');
+			    $("#btn-view").css({'top':'90%'});
+			}
+			hideAll = !hideAll;
+		}
+	})();
+</script>
 {{/extend}}
 
