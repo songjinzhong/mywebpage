@@ -22,30 +22,18 @@ body{
     font-family: "Microsoft YaHei";
     background: url("/imgs/bg.jpg")
 }
-#btn-view {
-    color: #c8f7c5;
-    text-align: center;
-    background-color: #1e824c;
-    border-radius: 50%;
-    line-height: 40px;
-    display: block;
-    position: absolute;
-    top 50%
-    margin-top -20px
-    margin-left 10%
-    height: 40px;
-    width: 40px;
+#btn-close {
+    font-family: 'icomoon' !important;
+    position absolute
+    right 10px 
+    top 3px
     cursor: pointer;
-    opacity: 0.5;
-    mytransition(1s);
-    &:hover {
-        opacity: 0.75;
-        box-shadow: 0 0px 10px 5px rgba(46,204,113,0.9);
+    &:before{
+        font-size 25px
+        content: "\ea0f";
     }
-    @media (max-width: 400px){
-        &{
-            margin-left -5px;
-        }
+    &:hover{
+        color white
     }
 }
 a{
@@ -97,7 +85,7 @@ a{
         -webkit-animation: circle 30s linear infinite;
         animation: circle 30s linear infinite;
         &:before{
-            content: '\e601';
+            content: '\e054';
             color: rgb(112, 128, 144);
             font-family: 'icomoon';
             font-style: normal;
@@ -119,7 +107,7 @@ a{
         -webkit-animation: circle 30s linear infinite;
         animation: circle 30s linear infinite;
         &:before{
-            content: '\e601';
+            content: '\e056';
             color: rgb(112, 128, 144);
             font-family: 'icomoon';
             font-style: normal;

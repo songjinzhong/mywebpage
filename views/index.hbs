@@ -141,7 +141,7 @@
   		</div>
 	</div>
 	<header>
-		<div id="tishi"></div>
+		<div id="btn-close"></div>
 		<span class="header hide" data-text="宋进忠"><p class="left">渔</p><p class="right">人</p></span>
 		<span class="about hide"><div><p data="浏览器、HTTP、CSS、JS、NodeJs、框架、框架、框架...">前端er</p></div><div><p data="上海、华东师范大学、计软学院、研究生、南京、实习...">学生</p></div><div><p data="写代码、Debug、改bug、狂论坛、学新技术、自黑...">程序员</p></div></span>
 		<div id="link" class="hide">
@@ -178,24 +178,23 @@
 </svg>
 
 </div>
-<div id="btn-view">隐藏</div>
 {{#extend "js"}}
 
 <script type="text/javascript" src="/js/snap.svg-min.js"></script>
 <script type="text/javascript" src="/js/jquery-3.1.0.min.js"></script>
 <script type="text/javascript">
 	(function(){
-		$("#btn-view").on('click', showHideToggle);
+		$("#btn-close").on('click', showHideToggle);
 		var hideAll = false;
 		function showHideToggle() {
 			if(hideAll) {
+				$("header").removeAttr('style');
+				$("#btn-close").removeAttr('style');
 			    $(".hide").show();
-			    $("#btn-view").html('隐藏');
-			    $("#btn-view").css({'top':'50%'});
 			} else {
+				$("header").height($("header").height()).css({    'background': 'rgba(0,0,0,0)'});
+				$("#btn-close").css({'transform': 'rotate(45deg)'});
 			    $(".hide").hide();
-			    $("#btn-view").html('显示');
-			    $("#btn-view").css({'top':'90%'});
 			}
 			hideAll = !hideAll;
 		}
