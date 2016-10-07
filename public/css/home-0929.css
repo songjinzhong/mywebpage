@@ -22,6 +22,11 @@ body {
 #btn-close:hover {
   color: #fff;
 }
+@media (max-width: 450px) {
+  #btn-close {
+    color: #fff;
+  }
+}
 a {
   text-decoration: none;
 }
@@ -94,7 +99,7 @@ a {
   bottom: 4%;
   left: 10%;
   margin: -0.5em;
-  font-size: 13em;
+  font-size: 8em;
   -webkit-animation: circle 30s linear infinite;
   animation: circle 30s linear infinite;
 }
